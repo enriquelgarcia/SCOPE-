@@ -1,0 +1,163 @@
+column,family,meaning_per_notes_txt,doc_status,present_2021-2022,present_2022-2023,present_2023-2024,present_2024-2025,present_2025-2026,n_seasons,canonical_field
+Div,identification,League Division,documented,1,1,1,1,1,5,source_div; competition_code
+Date,datetime,Match Date (notes.txt says dd/mm/yy; files use dd/mm/yyyy),documented,1,1,1,1,1,5,match_date; kickoff_datetime
+Time,datetime,Time of match kick off (time zone not documented),documented,1,1,1,1,1,5,kickoff_time; kickoff_datetime
+HomeTeam,participants,Home Team,documented,1,1,1,1,1,5,home_team_id; home_team_name
+AwayTeam,participants,Away Team,documented,1,1,1,1,1,5,away_team_id; away_team_name
+FTHG,result_full_time,Full Time Home Team Goals (also HG in notes),documented,1,1,1,1,1,5,home_goals
+FTAG,result_full_time,Full Time Away Team Goals (also AG in notes),documented,1,1,1,1,1,5,away_goals
+FTR,result_full_time,"Full Time Result (H=Home Win, D=Draw, A=Away Win) (also Res in notes)",documented,1,1,1,1,1,5,result
+HTHG,result_half_time,Half Time Home Team Goals,documented,1,1,1,1,1,5,ht_home_goals
+HTAG,result_half_time,Half Time Away Team Goals,documented,1,1,1,1,1,5,ht_away_goals
+HTR,result_half_time,"Half Time Result (H=Home Win, D=Draw, A=Away Win)",documented,1,1,1,1,1,5,ht_result
+Referee,referee,Match Referee,documented,1,1,1,1,1,5,referee
+HS,match_statistics,Home Team Shots,documented,1,1,1,1,1,5,home_shots
+AS,match_statistics,Away Team Shots,documented,1,1,1,1,1,5,away_shots
+HST,match_statistics,Home Team Shots on Target,documented,1,1,1,1,1,5,home_shots_on_target
+AST,match_statistics,Away Team Shots on Target,documented,1,1,1,1,1,5,away_shots_on_target
+HF,match_statistics,Home Team Fouls Committed,documented,1,1,1,1,1,5,home_fouls
+AF,match_statistics,Away Team Fouls Committed,documented,1,1,1,1,1,5,away_fouls
+HC,match_statistics,Home Team Corners,documented,1,1,1,1,1,5,home_corners
+AC,match_statistics,Away Team Corners,documented,1,1,1,1,1,5,away_corners
+HY,match_statistics,"Home Team Yellow Cards (English yellows exclude the first yellow of a second-yellow red, per notes)",documented,1,1,1,1,1,5,home_yellow_cards
+AY,match_statistics,Away Team Yellow Cards (same caveat),documented,1,1,1,1,1,5,away_yellow_cards
+HR,match_statistics,Home Team Red Cards,documented,1,1,1,1,1,5,home_red_cards
+AR,match_statistics,Away Team Red Cards,documented,1,1,1,1,1,5,away_red_cards
+B365H,odds_1x2_pre,Bet365 home win odds,documented,1,1,1,1,1,5,interim_only
+B365D,odds_1x2_pre,Bet365 draw odds,documented,1,1,1,1,1,5,interim_only
+B365A,odds_1x2_pre,Bet365 away win odds,documented,1,1,1,1,1,5,interim_only
+BWH,odds_1x2_pre,Bet&Win home win odds,documented,1,1,1,1,1,5,interim_only
+BWD,odds_1x2_pre,Bet&Win draw odds,documented,1,1,1,1,1,5,interim_only
+BWA,odds_1x2_pre,Bet&Win away win odds,documented,1,1,1,1,1,5,interim_only
+IWH,odds_1x2_pre,Interwetten home win odds,documented,1,1,1,0,0,3,interim_only
+IWD,odds_1x2_pre,Interwetten draw odds,documented,1,1,1,0,0,3,interim_only
+IWA,odds_1x2_pre,Interwetten away win odds,documented,1,1,1,0,0,3,interim_only
+PSH,odds_1x2_pre,Pinnacle home win odds,documented,1,1,1,1,1,5,interim_only
+PSD,odds_1x2_pre,Pinnacle draw odds,documented,1,1,1,1,1,5,interim_only
+PSA,odds_1x2_pre,Pinnacle away win odds,documented,1,1,1,1,1,5,interim_only
+WHH,odds_1x2_pre,William Hill home win odds,documented,1,1,1,1,0,4,interim_only
+WHD,odds_1x2_pre,William Hill draw odds,documented,1,1,1,1,0,4,interim_only
+WHA,odds_1x2_pre,William Hill away win odds,documented,1,1,1,1,0,4,interim_only
+VCH,odds_1x2_pre,"VC Bet (now BetVictor, per notes) home win odds",documented,1,1,1,0,0,3,interim_only
+VCD,odds_1x2_pre,"VC Bet (now BetVictor, per notes) draw odds",documented,1,1,1,0,0,3,interim_only
+VCA,odds_1x2_pre,"VC Bet (now BetVictor, per notes) away win odds",documented,1,1,1,0,0,3,interim_only
+MaxH,odds_1x2_pre,Market maximum home win odds,documented,1,1,1,1,1,5,interim_only
+MaxD,odds_1x2_pre,Market maximum draw odds,documented,1,1,1,1,1,5,interim_only
+MaxA,odds_1x2_pre,Market maximum away win odds,documented,1,1,1,1,1,5,interim_only
+AvgH,odds_1x2_pre,Market average home win odds,documented,1,1,1,1,1,5,mkt_avg_pre_home
+AvgD,odds_1x2_pre,Market average draw odds,documented,1,1,1,1,1,5,mkt_avg_pre_draw
+AvgA,odds_1x2_pre,Market average away win odds,documented,1,1,1,1,1,5,mkt_avg_pre_away
+B365>2.5,odds_ou25_pre,Bet365 over 2.5 goals,documented,1,1,1,1,1,5,interim_only
+B365<2.5,odds_ou25_pre,Bet365 under 2.5 goals,documented,1,1,1,1,1,5,interim_only
+P>2.5,odds_ou25_pre,Pinnacle over 2.5 goals,documented,1,1,1,1,1,5,interim_only
+P<2.5,odds_ou25_pre,Pinnacle under 2.5 goals,documented,1,1,1,1,1,5,interim_only
+Max>2.5,odds_ou25_pre,Market maximum over 2.5 goals,documented,1,1,1,1,1,5,interim_only
+Max<2.5,odds_ou25_pre,Market maximum under 2.5 goals,documented,1,1,1,1,1,5,interim_only
+Avg>2.5,odds_ou25_pre,Market average over 2.5 goals,documented,1,1,1,1,1,5,interim_only
+Avg<2.5,odds_ou25_pre,Market average under 2.5 goals,documented,1,1,1,1,1,5,interim_only
+AHh,odds_ah_pre,Market size of handicap (home team) (since 2019/2020),documented,1,1,1,1,1,5,interim_only
+B365AHH,odds_ah_pre,Bet365 Asian handicap home team odds,documented,1,1,1,1,1,5,interim_only
+B365AHA,odds_ah_pre,Bet365 Asian handicap away team odds,documented,1,1,1,1,1,5,interim_only
+PAHH,odds_ah_pre,Pinnacle Asian handicap home team odds,documented,1,1,1,1,1,5,interim_only
+PAHA,odds_ah_pre,Pinnacle Asian handicap away team odds,documented,1,1,1,1,1,5,interim_only
+MaxAHH,odds_ah_pre,Market maximum Asian handicap home team odds,documented,1,1,1,1,1,5,interim_only
+MaxAHA,odds_ah_pre,Market maximum Asian handicap away team odds,documented,1,1,1,1,1,5,interim_only
+AvgAHH,odds_ah_pre,Market average Asian handicap home team odds,documented,1,1,1,1,1,5,interim_only
+AvgAHA,odds_ah_pre,Market average Asian handicap away team odds,documented,1,1,1,1,1,5,interim_only
+B365CH,odds_1x2_close,"Bet365 home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+B365CD,odds_1x2_close,"Bet365 draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+B365CA,odds_1x2_close,"Bet365 away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+BWCH,odds_1x2_close,"Bet&Win home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+BWCD,odds_1x2_close,"Bet&Win draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+BWCA,odds_1x2_close,"Bet&Win away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+IWCH,odds_1x2_close,"Interwetten home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,0,0,3,interim_only
+IWCD,odds_1x2_close,"Interwetten draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,0,0,3,interim_only
+IWCA,odds_1x2_close,"Interwetten away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,0,0,3,interim_only
+PSCH,odds_1x2_close,"Pinnacle home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+PSCD,odds_1x2_close,"Pinnacle draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+PSCA,odds_1x2_close,"Pinnacle away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+WHCH,odds_1x2_close,"William Hill home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,0,4,interim_only
+WHCD,odds_1x2_close,"William Hill draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,0,4,interim_only
+WHCA,odds_1x2_close,"William Hill away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,0,4,interim_only
+VCCH,odds_1x2_close,"VC Bet (now BetVictor, per notes) home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,0,0,3,interim_only
+VCCD,odds_1x2_close,"VC Bet (now BetVictor, per notes) draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,0,0,3,interim_only
+VCCA,odds_1x2_close,"VC Bet (now BetVictor, per notes) away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,0,0,3,interim_only
+MaxCH,odds_1x2_close,"Market maximum home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+MaxCD,odds_1x2_close,"Market maximum draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+MaxCA,odds_1x2_close,"Market maximum away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,interim_only
+AvgCH,odds_1x2_close,"Market average home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,mkt_avg_close_home
+AvgCD,odds_1x2_close,"Market average draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,mkt_avg_close_draw
+AvgCA,odds_1x2_close,"Market average away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,1,1,1,1,1,5,mkt_avg_close_away
+B365C>2.5,odds_ou25_close,"Bet365 over 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+B365C<2.5,odds_ou25_close,"Bet365 under 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+PC>2.5,odds_ou25_close,"Pinnacle over 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+PC<2.5,odds_ou25_close,"Pinnacle under 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+MaxC>2.5,odds_ou25_close,"Market maximum over 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+MaxC<2.5,odds_ou25_close,"Market maximum under 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+AvgC>2.5,odds_ou25_close,"Market average over 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+AvgC<2.5,odds_ou25_close,"Market average under 2.5 goals, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+AHCh,odds_ah_close,NOT DOCUMENTED in notes.txt; inferred: closing counterpart of AHh,inferred_not_documented,1,1,1,1,1,5,interim_only
+B365CAHH,odds_ah_close,"Bet365 Asian handicap home team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+B365CAHA,odds_ah_close,"Bet365 Asian handicap away team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+PCAHH,odds_ah_close,"Pinnacle Asian handicap home team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+PCAHA,odds_ah_close,"Pinnacle Asian handicap away team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+MaxCAHH,odds_ah_close,"Market maximum Asian handicap home team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+MaxCAHA,odds_ah_close,"Market maximum Asian handicap away team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+AvgCAHH,odds_ah_close,"Market average Asian handicap home team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+AvgCAHA,odds_ah_close,"Market average Asian handicap away team odds, closing; closing rule is stated for 1X2 odds only; extension is inferred",inferred_by_rule_extension,1,1,1,1,1,5,interim_only
+BFH,odds_1x2_pre,Betfair home win odds,documented,0,0,0,1,0,1,interim_only
+BFD,odds_1x2_pre,Betfair draw odds,documented,0,0,0,1,0,1,interim_only
+BFA,odds_1x2_pre,Betfair away win odds,documented,0,0,0,1,0,1,interim_only
+1XBH,odds_1x2_pre,1XBet home win odds,documented,0,0,0,1,0,1,interim_only
+1XBD,odds_1x2_pre,1XBet draw odds,documented,0,0,0,1,0,1,interim_only
+1XBA,odds_1x2_pre,1XBet away win odds,documented,0,0,0,1,0,1,interim_only
+BFEH,odds_1x2_pre,Betfair Exchange home win odds,documented,0,0,0,1,1,2,interim_only
+BFED,odds_1x2_pre,Betfair Exchange draw odds,documented,0,0,0,1,1,2,interim_only
+BFEA,odds_1x2_pre,Betfair Exchange away win odds,documented,0,0,0,1,1,2,interim_only
+BFE>2.5,odds_ou25_pre,NOT DOCUMENTED in notes.txt; inferred from naming pattern: Betfair Exchange over 2.5 goals,inferred_not_documented,0,0,0,1,1,2,interim_only
+BFE<2.5,odds_ou25_pre,NOT DOCUMENTED in notes.txt; inferred from naming pattern: Betfair Exchange under 2.5 goals,inferred_not_documented,0,0,0,1,1,2,interim_only
+BFEAHH,odds_ah_pre,NOT DOCUMENTED; inferred from naming pattern: Betfair Exchange Asian handicap home team odds,inferred_not_documented,0,0,0,1,1,2,interim_only
+BFEAHA,odds_ah_pre,NOT DOCUMENTED; inferred from naming pattern: Betfair Exchange Asian handicap away team odds,inferred_not_documented,0,0,0,1,1,2,interim_only
+BFCH,odds_1x2_close,"Betfair home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,0,1,interim_only
+BFCD,odds_1x2_close,"Betfair draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,0,1,interim_only
+BFCA,odds_1x2_close,"Betfair away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,0,1,interim_only
+1XBCH,odds_1x2_close,"1XBet home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,0,1,interim_only
+1XBCD,odds_1x2_close,"1XBet draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,0,1,interim_only
+1XBCA,odds_1x2_close,"1XBet away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,0,1,interim_only
+BFECH,odds_1x2_close,"Betfair Exchange home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,1,2,interim_only
+BFECD,odds_1x2_close,"Betfair Exchange draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,1,2,interim_only
+BFECA,odds_1x2_close,"Betfair Exchange away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,1,1,2,interim_only
+BFEC>2.5,odds_ou25_close,"Betfair Exchange over 2.5 goals, closing; NOT DOCUMENTED; inferred",inferred_not_documented,0,0,0,1,1,2,interim_only
+BFEC<2.5,odds_ou25_close,"Betfair Exchange under 2.5 goals, closing; NOT DOCUMENTED; inferred",inferred_not_documented,0,0,0,1,1,2,interim_only
+BFECAHH,odds_ah_close,"Betfair Exchange Asian handicap home team odds, closing; NOT DOCUMENTED; inferred",inferred_not_documented,0,0,0,1,1,2,interim_only
+BFECAHA,odds_ah_close,"Betfair Exchange Asian handicap away team odds, closing; NOT DOCUMENTED; inferred",inferred_not_documented,0,0,0,1,1,2,interim_only
+BFDH,odds_1x2_pre,Betfred home win odds,documented,0,0,0,0,1,1,interim_only
+BFDD,odds_1x2_pre,Betfred draw odds,documented,0,0,0,0,1,1,interim_only
+BFDA,odds_1x2_pre,Betfred away win odds,documented,0,0,0,0,1,1,interim_only
+BMGMH,odds_1x2_pre,BetMGM home win odds,documented,0,0,0,0,1,1,interim_only
+BMGMD,odds_1x2_pre,BetMGM draw odds,documented,0,0,0,0,1,1,interim_only
+BMGMA,odds_1x2_pre,BetMGM away win odds,documented,0,0,0,0,1,1,interim_only
+BVH,odds_1x2_pre,Betvictor home win odds,documented,0,0,0,0,1,1,interim_only
+BVD,odds_1x2_pre,Betvictor draw odds,documented,0,0,0,0,1,1,interim_only
+BVA,odds_1x2_pre,Betvictor away win odds,documented,0,0,0,0,1,1,interim_only
+CLH,odds_1x2_pre,Coral home win odds,documented,0,0,0,0,1,1,interim_only
+CLD,odds_1x2_pre,Coral draw odds,documented,0,0,0,0,1,1,interim_only
+CLA,odds_1x2_pre,Coral away win odds,documented,0,0,0,0,1,1,interim_only
+LBH,odds_1x2_pre,Ladbrokes home win odds,documented,0,0,0,0,1,1,interim_only
+LBD,odds_1x2_pre,Ladbrokes draw odds,documented,0,0,0,0,1,1,interim_only
+LBA,odds_1x2_pre,Ladbrokes away win odds,documented,0,0,0,0,1,1,interim_only
+BFDCH,odds_1x2_close,"Betfred home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BFDCD,odds_1x2_close,"Betfred draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BFDCA,odds_1x2_close,"Betfred away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BMGMCH,odds_1x2_close,"BetMGM home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BMGMCD,odds_1x2_close,"BetMGM draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BMGMCA,odds_1x2_close,"BetMGM away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BVCH,odds_1x2_close,"Betvictor home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BVCD,odds_1x2_close,"Betvictor draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+BVCA,odds_1x2_close,"Betvictor away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+CLCH,odds_1x2_close,"Coral home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+CLCD,odds_1x2_close,"Coral draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+CLCA,odds_1x2_close,"Coral away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+LBCH,odds_1x2_close,"Ladbrokes home win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+LBCD,odds_1x2_close,"Ladbrokes draw odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only
+LBCA,odds_1x2_close,"Ladbrokes away win odds, closing (notes rule: extra ""C"" after bookmaker/Max/Avg, e.g. B365CH)",documented_by_rule,0,0,0,0,1,1,interim_only

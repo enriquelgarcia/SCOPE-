@@ -1,0 +1,8 @@
+family,metric,h_feature,a_feature,diff_feature,n_rows,max_abs_identity_error,n_rows_exact_equality,tolerance,identity_verified
+season,ppg_season,h_ppg_season,a_ppg_season,diff_ppg_season,1399,7.216449660063518e-16,804,1e-12,True
+season,gf_pg_season,h_gf_pg_season,a_gf_pg_season,diff_gf_pg_season,1399,8.881784197001252e-16,809,1e-12,True
+season,ga_pg_season,h_ga_pg_season,a_ga_pg_season,diff_ga_pg_season,1399,8.881784197001252e-16,767,1e-12,True
+last5,ppg_last5,h_ppg_last5,a_ppg_last5,diff_ppg_last5,1399,4.440892098500626e-16,1046,1e-12,True
+last5,gf_pg_last5,h_gf_pg_last5,a_gf_pg_last5,diff_gf_pg_last5,1399,6.661338147750939e-16,974,1e-12,True
+last5,ga_pg_last5,h_ga_pg_last5,a_ga_pg_last5,diff_ga_pg_last5,1399,4.440892098500626e-16,991,1e-12,True
+last5,sot_pg_last5,h_sot_pg_last5,a_sot_pg_last5,diff_sot_pg_last5,1399,8.881784197001252e-16,1071,1e-12,True

@@ -1,0 +1,128 @@
+section,metric,season,value,expected,status,note
+integrity,sha256_INTERIM,ALL,cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad,cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad,PASS,D44
+integrity,sha256_CANONICAL,ALL,06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1,06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1,PASS,D44
+integrity,sha256_TEAM_MATCH_LOG,ALL,0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02,0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02,PASS,D44
+integrity,sha256_FEATURES,ALL,a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356,a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356,PASS,D44
+dimensions,CANONICAL_rows,ALL,1900,1900,PASS,
+dimensions,CANONICAL_columns,ALL,42,42,PASS,
+dimensions,FEATURES_rows,ALL,1900,1900,PASS,
+dimensions,FEATURES_columns,ALL,30,30,PASS,
+dimensions,TEAM_MATCH_LOG_rows,ALL,3800,3800,PASS,
+dimensions,TEAM_MATCH_LOG_columns,ALL,10,10,PASS,
+alignment,features_match_id_equals_canonical_row_by_row,ALL,True,True,PASS,
+alignment,tml_rows_equal_2x_canonical,ALL,True,True,PASS,
+alignment,match_id_unique_canonical,ALL,True,True,PASS,
+cardinality,seasons,ALL,5,5,PASS,
+cardinality,team_id_distinct,ALL,27,27,PASS,D27
+cardinality,referees_distinct,ALL,39,,INFO,sin análisis de efecto
+cardinality,matches,2021-2022,380,380,PASS,
+cardinality,teams,2021-2022,20,20,PASS,
+cardinality,referees_distinct,2021-2022,22,,INFO,
+cardinality,kickoff_min,2021-2022,2021-08-13T20:00:00,,INFO,
+cardinality,kickoff_max,2021-2022,2022-05-22T16:00:00,,INFO,
+cardinality,matches,2022-2023,380,380,PASS,
+cardinality,teams,2022-2023,20,20,PASS,
+cardinality,referees_distinct,2022-2023,23,,INFO,
+cardinality,kickoff_min,2022-2023,2022-08-05T20:00:00,,INFO,
+cardinality,kickoff_max,2022-2023,2023-05-28T16:30:00,,INFO,
+cardinality,matches,2023-2024,380,380,PASS,
+cardinality,teams,2023-2024,20,20,PASS,
+cardinality,referees_distinct,2023-2024,28,,INFO,
+cardinality,kickoff_min,2023-2024,2023-08-11T20:00:00,,INFO,
+cardinality,kickoff_max,2023-2024,2024-05-19T16:00:00,,INFO,
+cardinality,matches,2024-2025,380,380,PASS,
+cardinality,teams,2024-2025,20,20,PASS,
+cardinality,referees_distinct,2024-2025,26,,INFO,
+cardinality,kickoff_min,2024-2025,2024-08-16T20:00:00,,INFO,
+cardinality,kickoff_max,2024-2025,2025-05-25T16:00:00,,INFO,
+cardinality,matches,2025-2026,380,380,PASS,
+cardinality,teams,2025-2026,20,20,PASS,
+cardinality,referees_distinct,2025-2026,23,,INFO,
+cardinality,kickoff_min,2025-2026,2025-08-15T20:00:00,,INFO,
+cardinality,kickoff_max,2025-2026,2026-05-24T16:00:00,,INFO,
+cardinality,features_rows,2021-2022,380,380,PASS,
+cardinality,features_rows,2022-2023,380,380,PASS,
+cardinality,features_rows,2023-2024,380,380,PASS,
+cardinality,features_rows,2024-2025,380,380,PASS,
+cardinality,features_rows,2025-2026,380,380,PASS,
+cardinality,teams_new_vs_previous_season,2022-2023,3,,INFO,"afc_bournemouth,fulham,nottingham_forest"
+cardinality,teams_new_vs_previous_season,2023-2024,3,,INFO,"burnley,luton_town,sheffield_united"
+cardinality,teams_new_vs_previous_season,2024-2025,3,,INFO,"ipswich_town,leicester_city,southampton"
+cardinality,teams_new_vs_previous_season,2025-2026,3,,INFO,"burnley,leeds_united,sunderland"
+constants,competition_code_n_unique,ALL,1,1,PASS,valor=['EPL']
+constants,source_name_n_unique,ALL,1,1,PASS,valor=['football-data.co.uk']
+constants,source_div_n_unique,ALL,1,1,PASS,valor=['E0']
+constants,feature_version_n_unique,ALL,1,1,PASS,valor=['0.1']
+constants,feature_version_value,ALL,0.1,0.1,PASS,string
+dq_flags,rows_without_flags,ALL,1887,1887,PASS,
+dq_flags,rows_with_flags,ALL,13,13,PASS,
+dq_flags,count_HST_GT_HS,ALL,0,0,PASS,registro de calidad §1
+dq_flags,count_HST_GT_HS,2021-2022,0,,INFO,
+dq_flags,count_HST_GT_HS,2022-2023,0,,INFO,
+dq_flags,count_HST_GT_HS,2023-2024,0,,INFO,
+dq_flags,count_HST_GT_HS,2024-2025,0,,INFO,
+dq_flags,count_HST_GT_HS,2025-2026,0,,INFO,
+dq_flags,count_AST_GT_AS,ALL,1,1,PASS,registro de calidad §1
+dq_flags,count_AST_GT_AS,2021-2022,1,,INFO,
+dq_flags,count_AST_GT_AS,2022-2023,0,,INFO,
+dq_flags,count_AST_GT_AS,2023-2024,0,,INFO,
+dq_flags,count_AST_GT_AS,2024-2025,0,,INFO,
+dq_flags,count_AST_GT_AS,2025-2026,0,,INFO,
+dq_flags,count_GOALS_GT_SOT,ALL,12,12,PASS,registro de calidad §1
+dq_flags,count_GOALS_GT_SOT,2021-2022,3,,INFO,
+dq_flags,count_GOALS_GT_SOT,2022-2023,2,,INFO,
+dq_flags,count_GOALS_GT_SOT,2023-2024,3,,INFO,
+dq_flags,count_GOALS_GT_SOT,2024-2025,2,,INFO,
+dq_flags,count_GOALS_GT_SOT,2025-2026,2,,INFO,
+dq_flags,rows_with_multiple_flags,ALL,0,,INFO,
+dq_flags,recomputed_AST_GT_AS,ALL,1,1,PASS,
+dq_flags,recomputed_HST_GT_HS,ALL,0,0,PASS,
+dq_flags,recomputed_GOALS_GT_SOT,ALL,12,12,PASS,
+missingness,h_rows_n_prev_0,ALL,50,50,PASS,
+missingness,h_all_rate_features_null_when_n_prev_0,ALL,True,True,PASS,
+missingness,h_no_rate_feature_null_when_n_prev_ge_1,ALL,True,True,PASS,
+missingness,a_rows_n_prev_0,ALL,50,50,PASS,
+missingness,a_all_rate_features_null_when_n_prev_0,ALL,True,True,PASS,
+missingness,a_no_rate_feature_null_when_n_prev_ge_1,ALL,True,True,PASS,
+missingness,rows_min_n_prev_0,ALL,50,50,PASS,las filas con n_prev=0 coinciden en ambos lados: 10 partidos inaugurales por temporada
+missingness,rows_both_n_prev_0,ALL,50,50,PASS,
+missingness,diff_null_iff_min_n_prev_0,ALL,True,True,PASS,
+missingness,features_nonhistory_columns_with_nulls,ALL,0,0,PASS,
+missingness,canonical_columns_with_nulls_except_dq_flags,ALL,0,0,PASS,
+history,h_n_prev_season_min,ALL,0,0,PASS,
+history,h_n_prev_season_max,ALL,37,37,PASS,V12
+history,a_n_prev_season_min,ALL,0,0,PASS,
+history,a_n_prev_season_max,ALL,37,37,PASS,V12
+history,max_abs_h_minus_a_n_prev,ALL,4,,INFO,desfase de calendario entre local y visitante (aplazamientos)
+history,max_abs_h_minus_a_n_prev,2021-2022,4,,INFO,
+history,rows_abs_h_minus_a_n_prev_ge_2,2021-2022,51,,INFO,
+history,max_abs_h_minus_a_n_prev,2022-2023,3,,INFO,
+history,rows_abs_h_minus_a_n_prev_ge_2,2022-2023,20,,INFO,
+history,max_abs_h_minus_a_n_prev,2023-2024,2,,INFO,
+history,rows_abs_h_minus_a_n_prev_ge_2,2023-2024,4,,INFO,
+history,max_abs_h_minus_a_n_prev,2024-2025,1,,INFO,
+history,rows_abs_h_minus_a_n_prev_ge_2,2024-2025,0,,INFO,
+history,max_abs_h_minus_a_n_prev,2025-2026,1,,INFO,
+history,rows_abs_h_minus_a_n_prev_ge_2,2025-2026,0,,INFO,
+eligibility,rule_min_n_prev_ge_3_equals_flag,ALL,True,True,PASS,P01 provisional
+eligibility,eligible,ALL,1749,1749,PASS,
+eligibility,not_eligible,ALL,151,151,PASS,
+eligibility,eligible,2021-2022,350,350,PASS,
+eligibility,not_eligible,2021-2022,30,,INFO,
+eligibility,eligible,2022-2023,350,350,PASS,
+eligibility,not_eligible,2022-2023,30,,INFO,
+eligibility,eligible,2023-2024,349,349,PASS,
+eligibility,not_eligible,2023-2024,31,,INFO,
+eligibility,eligible,2024-2025,350,350,PASS,
+eligibility,not_eligible,2024-2025,30,,INFO,
+eligibility,eligible,2025-2026,350,350,PASS,
+eligibility,not_eligible,2025-2026,30,,INFO,
+eligibility,eligible_rows_with_null_history_features,ALL,0,0,PASS,V13
+eligibility,eligible_rows_min_n_prev_le_5,ALL,150,,INFO,zona donde last5 == season al menos para un lado (M3)
+eligibility,eligible_rows_both_n_prev_le_5,ALL,148,,INFO,
+eligibility,not_eligible_after_first_eligible_kickoff,2021-2022,0,,INFO,"no elegibles por aplazamientos, no solo por estar al inicio"
+eligibility,not_eligible_after_first_eligible_kickoff,2022-2023,0,,INFO,"no elegibles por aplazamientos, no solo por estar al inicio"
+eligibility,not_eligible_after_first_eligible_kickoff,2023-2024,1,,INFO,"no elegibles por aplazamientos, no solo por estar al inicio"
+eligibility,not_eligible_after_first_eligible_kickoff,2024-2025,0,,INFO,"no elegibles por aplazamientos, no solo por estar al inicio"
+eligibility,not_eligible_after_first_eligible_kickoff,2025-2026,0,,INFO,"no elegibles por aplazamientos, no solo por estar al inicio"
+eligibility,not_eligible_after_first_eligible_kickoff,ALL,1,,INFO,

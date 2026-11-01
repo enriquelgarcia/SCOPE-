@@ -1,0 +1,14 @@
+match_id,season,source_file,source_row,match_date,home_team_id,away_team_id,dq_flags,home_shots,home_shots_on_target,away_shots,away_shots_on_target,home_goals,away_goals
+EPL_2021-2022_20210815_newcastle_united_west_ham_united,2021-2022,PL_2021-2022_raw.csv,9,2021-08-15,newcastle_united,west_ham_united,AST_GT_AS,17,3,8,9,2,4
+EPL_2021-2022_20210821_manchester_city_norwich_city,2021-2022,PL_2021-2022_raw.csv,15,2021-08-21,manchester_city,norwich_city,GOALS_GT_SOT,16,4,1,0,5,0
+EPL_2021-2022_20211017_newcastle_united_tottenham_hotspur,2021-2022,PL_2021-2022_raw.csv,79,2021-10-17,newcastle_united,tottenham_hotspur,GOALS_GT_SOT,7,1,14,4,2,3
+EPL_2021-2022_20220121_watford_norwich_city,2021-2022,PL_2021-2022_raw.csv,205,2022-01-21,watford,norwich_city,GOALS_GT_SOT,15,4,7,2,0,3
+EPL_2022-2023_20221020_leicester_city_leeds_united,2022-2023,PL_2022-2023_raw.csv,106,2022-10-20,leicester_city,leeds_united,GOALS_GT_SOT,5,1,14,2,2,0
+EPL_2022-2023_20230426_chelsea_brentford,2022-2023,PL_2022-2023_raw.csv,319,2023-04-26,chelsea,brentford,GOALS_GT_SOT,15,4,7,1,0,2
+EPL_2023-2024_20230930_wolverhampton_wanderers_manchester_city,2023-2024,PL_2023-2024_raw.csv,66,2023-09-30,wolverhampton_wanderers,manchester_city,GOALS_GT_SOT,3,1,23,8,2,1
+EPL_2023-2024_20231027_crystal_palace_tottenham_hotspur,2023-2024,PL_2023-2024_raw.csv,91,2023-10-27,crystal_palace,tottenham_hotspur,GOALS_GT_SOT,13,3,10,1,1,2
+EPL_2023-2024_20240421_crystal_palace_west_ham_united,2023-2024,PL_2023-2024_raw.csv,329,2024-04-21,crystal_palace,west_ham_united,GOALS_GT_SOT,18,7,4,1,5,2
+EPL_2024-2025_20241130_crystal_palace_newcastle_united,2024-2025,PL_2024-2025_raw.csv,123,2024-11-30,crystal_palace,newcastle_united,GOALS_GT_SOT,16,4,1,0,1,1
+EPL_2024-2025_20241205_fulham_brighton_and_hove_albion,2024-2025,PL_2024-2025_raw.csv,139,2024-12-05,fulham,brighton_and_hove_albion,GOALS_GT_SOT,6,2,13,3,3,1
+EPL_2025-2026_20251202_fulham_manchester_city,2025-2026,PL_2025-2026_raw.csv,132,2025-12-02,fulham,manchester_city,GOALS_GT_SOT,12,6,11,4,4,5
+EPL_2025-2026_20260107_burnley_manchester_united,2025-2026,PL_2025-2026_raw.csv,208,2026-01-07,burnley,manchester_united,GOALS_GT_SOT,7,1,30,10,2,2

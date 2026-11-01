@@ -1,0 +1,14 @@
+quantity,count,denominator_label,denominator,pct
+raw_rows_AST_GT_AS,1,filas RAW (5 temporadas),1900,0.05263157894736842
+raw_rows_HST_GT_HS,0,filas RAW (5 temporadas),1900,0.0
+canonical_rows_AST_GT_AS,1,partidos CANONICAL,1900,0.05263157894736842
+canonical_rows_HST_GT_HS,0,partidos CANONICAL,1900,0.0
+team_match_rows_with_anomalous_value,1,filas team_match_log,3800,0.02631578947368421
+matches_h_or_a_sot_last5_affected,5,partidos totales,1900,0.2631578947368421
+matches_h_or_a_sot_last5_affected_eligible,3,partidos elegibles (D48),1749,0.17152658662092624
+matches_h_or_a_sot_last5_affected_not_eligible,2,partidos no elegibles,151,1.3245033112582782
+matches_diff_sot_last5_affected,5,partidos totales,1900,0.2631578947368421
+matches_diff_sot_last5_affected_eligible,3,partidos elegibles (D48),1749,0.17152658662092624
+matches_h_or_a_sot_last5_affected_in_TRAIN,5,partidos TRAIN,1140,0.43859649122807015
+matches_h_or_a_sot_last5_affected_eligible_in_TRAIN,3,partidos elegibles TRAIN,1049,0.2859866539561487
+matches_diff_sot_last5_affected_eligible_in_TRAIN,3,partidos elegibles TRAIN,1049,0.2859866539561487

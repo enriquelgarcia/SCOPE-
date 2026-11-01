@@ -1,0 +1,55 @@
+feature_1,feature_2,family,relation,n,pearson,spearman,pearson_minus_spearman
+h_ppg_season,a_ppg_season,h_a_diff_definicional,"mismo indicador, equipo local vs visitante",1399,0.016398442963926424,0.007926388523464294,0.00847205444046213
+h_ppg_season,diff_ppg_season,h_a_diff_definicional,diff = h − a (algebraica),1399,0.6986128094366227,0.6901783809778903,0.008434428458732435
+a_ppg_season,diff_ppg_season,h_a_diff_definicional,diff = h − a (algebraica),1399,-0.7039475539335801,-0.6855499347021186,-0.01839761923146155
+h_gf_pg_season,a_gf_pg_season,h_a_diff_definicional,"mismo indicador, equipo local vs visitante",1399,0.013414931684806758,0.009104753413500838,0.00431017827130592
+h_gf_pg_season,diff_gf_pg_season,h_a_diff_definicional,diff = h − a (algebraica),1399,0.7015475265674267,0.6797251337026381,0.021822392864788598
+a_gf_pg_season,diff_gf_pg_season,h_a_diff_definicional,diff = h − a (algebraica),1399,-0.7031473317603447,-0.6929033137894278,-0.010244017970916897
+h_ga_pg_season,a_ga_pg_season,h_a_diff_definicional,"mismo indicador, equipo local vs visitante",1399,0.06960986189501364,0.044630828264454435,0.024979033630559207
+h_ga_pg_season,diff_ga_pg_season,h_a_diff_definicional,diff = h − a (algebraica),1399,0.6798906329930842,0.6657723400520783,0.014118292941005861
+a_ga_pg_season,diff_ga_pg_season,h_a_diff_definicional,diff = h − a (algebraica),1399,-0.6842076279369079,-0.6663263047232018,-0.01788132321370617
+h_ppg_last5,a_ppg_last5,h_a_diff_definicional,"mismo indicador, equipo local vs visitante",1399,0.0117828230316714,0.006408839666505096,0.005373983365166303
+h_ppg_last5,diff_ppg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,0.7026703988135149,0.6801693256289502,0.022501073184564735
+a_ppg_last5,diff_ppg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,-0.703186668462607,-0.7033500112879453,0.00016334282533825295
+h_gf_pg_last5,a_gf_pg_last5,h_a_diff_definicional,"mismo indicador, equipo local vs visitante",1399,0.04736037639813794,0.057111214365587165,-0.009750837967449223
+h_gf_pg_last5,diff_gf_pg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,0.6923697632920924,0.6640140677845492,0.028355695507543244
+a_gf_pg_last5,diff_gf_pg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,-0.687942309263913,-0.6653608063024813,-0.022581502961431688
+h_ga_pg_last5,a_ga_pg_last5,h_a_diff_definicional,"mismo indicador, equipo local vs visitante",1399,0.08145586258051513,0.08315028750308115,-0.0016944249225660235
+h_ga_pg_last5,diff_ga_pg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,0.6724138143532788,0.6542472297085228,0.018166584644756067
+a_ga_pg_last5,diff_ga_pg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,-0.682943739395187,-0.6604390897523739,-0.02250464964281318
+h_sot_pg_last5,a_sot_pg_last5,h_a_diff_definicional,"mismo indicador, equipo local vs visitante",1399,0.03649992152585985,0.042698872682991426,-0.006198951157131573
+h_sot_pg_last5,diff_sot_pg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,0.6867288749200825,0.6713564937553855,0.015372381164696969
+a_sot_pg_last5,diff_sot_pg_last5,h_a_diff_definicional,diff = h − a (algebraica),1399,-0.7013637237868643,-0.670752197573325,-0.030611526213539242
+h_ppg_season,h_ppg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7816575675327049,0.7679288622276353,0.013728705305069533
+h_gf_pg_season,h_gf_pg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7710639332834327,0.7666489921394228,0.004414941144009865
+h_ga_pg_season,h_ga_pg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.737931135910732,0.7184144992389521,0.01951663667177994
+h_ppg_season,h_gf_pg_season,conceptual,PPG ↔ GF/PG,1399,0.8189429046628334,0.8161266128447463,0.002816291818087069
+h_ppg_season,h_ga_pg_season,conceptual,PPG ↔ GA/PG,1399,-0.7773428823522052,-0.7583676042925382,-0.018975278059666922
+h_gf_pg_season,h_ga_pg_season,conceptual,GF/PG ↔ GA/PG,1399,-0.5003257745715043,-0.4702431272983642,-0.030082647273140084
+h_ppg_last5,h_gf_pg_last5,conceptual,PPG ↔ GF/PG,1399,0.7387601917864752,0.7413231851445686,-0.0025629933580934017
+h_ppg_last5,h_ga_pg_last5,conceptual,PPG ↔ GA/PG,1399,-0.7009132598369305,-0.7023839340783358,0.0014706742414052343
+h_gf_pg_last5,h_ga_pg_last5,conceptual,GF/PG ↔ GA/PG,1399,-0.3031189196566559,-0.296117894394501,-0.007001025262154903
+h_sot_pg_last5,h_gf_pg_last5,conceptual,SOT last5 ↔ GF last5,1399,0.7139114305392359,0.7070068495750741,0.0069045809641617995
+h_sot_pg_last5,h_ppg_last5,conceptual,SOT last5 ↔ PPG last5,1399,0.5961334044606933,0.5799093297288349,0.016224074731858384
+a_ppg_season,a_ppg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7785225213962557,0.7626320952200746,0.015890426176181083
+a_gf_pg_season,a_gf_pg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7645688168690518,0.7513317934535971,0.01323702341545463
+a_ga_pg_season,a_ga_pg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7269595534732454,0.6964569005786173,0.030502652894628057
+a_ppg_season,a_gf_pg_season,conceptual,PPG ↔ GF/PG,1399,0.8179926400783559,0.8150067988696323,0.002985841208723583
+a_ppg_season,a_ga_pg_season,conceptual,PPG ↔ GA/PG,1399,-0.7830924586742116,-0.7625980135504976,-0.02049444512371401
+a_gf_pg_season,a_ga_pg_season,conceptual,GF/PG ↔ GA/PG,1399,-0.5026378765396982,-0.4735906219431078,-0.029047254596590355
+a_ppg_last5,a_gf_pg_last5,conceptual,PPG ↔ GF/PG,1399,0.7276665921462975,0.7394059294590672,-0.011739337312769771
+a_ppg_last5,a_ga_pg_last5,conceptual,PPG ↔ GA/PG,1399,-0.706276723220178,-0.7067178067607186,0.00044108354054062104
+a_gf_pg_last5,a_ga_pg_last5,conceptual,GF/PG ↔ GA/PG,1399,-0.3000842528466974,-0.294054214805362,-0.006030038041335395
+a_sot_pg_last5,a_gf_pg_last5,conceptual,SOT last5 ↔ GF last5,1399,0.7095724808812793,0.6975418526179695,0.012030628263309806
+a_sot_pg_last5,a_ppg_last5,conceptual,SOT last5 ↔ PPG last5,1399,0.5837233287077966,0.5769829758327123,0.006740352875084343
+diff_ppg_season,diff_ppg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7691191412369137,0.7550628795569941,0.01405626167991958
+diff_gf_pg_season,diff_gf_pg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7487739692554622,0.7309252105039934,0.01784875875146885
+diff_ga_pg_season,diff_ga_pg_last5,season_vs_last5,"misma métrica, ventana season vs last5 (idénticas si n_prev ≤ 5)",1399,0.7247992516664288,0.7159586921784509,0.008840559487977906
+diff_ppg_season,diff_gf_pg_season,conceptual,PPG ↔ GF/PG,1399,0.8203242446962278,0.8196343195618119,0.000689925134415903
+diff_ppg_season,diff_ga_pg_season,conceptual,PPG ↔ GA/PG,1399,-0.7821913851377285,-0.7799725684666813,-0.0022188166710471746
+diff_gf_pg_season,diff_ga_pg_season,conceptual,GF/PG ↔ GA/PG,1399,-0.5088412968371343,-0.5132142452336058,0.00437294839647151
+diff_ppg_last5,diff_gf_pg_last5,conceptual,PPG ↔ GF/PG,1399,0.7497173370532666,0.7393347169996031,0.010382620053663527
+diff_ppg_last5,diff_ga_pg_last5,conceptual,PPG ↔ GA/PG,1399,-0.6979349665020165,-0.6945990212599933,-0.003335945242023186
+diff_gf_pg_last5,diff_ga_pg_last5,conceptual,GF/PG ↔ GA/PG,1399,-0.3205987151976821,-0.32021296089356593,-0.0003857543041161926
+diff_sot_pg_last5,diff_gf_pg_last5,conceptual,SOT last5 ↔ GF last5,1399,0.6876238506503385,0.6764567881307108,0.011167062519627735
+diff_sot_pg_last5,diff_ppg_last5,conceptual,SOT last5 ↔ PPG last5,1399,0.6041610984833057,0.585118989617098,0.01904210886620772

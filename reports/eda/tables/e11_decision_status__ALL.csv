@@ -1,0 +1,16 @@
+topic,id,status,evidence,decision_or_next_step
+M1 — representación h/a/diff,D46,CERRADA,"E5: rango 14/21, nullity 7",No usar HADIFF completo en lineales no regularizados; HA y DIFF siguen candidatas
+M3 — season vs last5,D47,CERRADA,E6: identidad exacta en n_prev ≤ 5 (diff: max ≤ 5); distintas fuera,Estructura resuelta; utilidad predictiva en P02
+Burn-in (P01),D48,CERRADA,E7: rendimientos decrecientes desde 2→3 a coste constante,k = 3; sensibilidad k = 4/5 opcional en TRAIN/VAL
+Q01 — AS/AST,D49,CERRADA,E9: inconsistencia de fuente; propagación localizada,Conservar valores fuente + flag; reparación futura solo con decisión y versionado
+Ventana last5,P02,ABIERTA (PROVISIONAL),E6 + E8: distinta y responsiva; menor asociación univariada que season; sin persistencia clara,Comparación incremental season vs season + last5 en modelado (TRAIN/VAL)
+goal_difference como respuesta OLS,P03,ABIERTA (PROVISIONAL),"E2: GD entera, discreta, colas algo pesadas",Validación por residuos en la fase de Matemáticas (R)
+Subconjuntos d = 5 / d = 10,P04,ABIERTA (PROVISIONAL),"E5 (VIF, rango), E8 (last5 en d = 5), E9 (diff_sot_pg_last5), E10 (diff más estables)",Resolver en modelado con TRAIN/VAL; D22 y D23 (Complejidad) vigentes
+Split temporal,P06,ABIERTA (PROVISIONAL),"Propuesta vigente Train 2021/22–2023/24, Val 2024/25, Test 2025/26 (D35, D42)",Confirmar al iniciar el modelado; 2025/26 reservado como test final
+Zona horaria de kickoff_datetime,P07,ABIERTA (PROVISIONAL),Una sola liga y fuente en v0.1,Definir al incorporar otras fuentes o ligas
+Web scraping en R (fuente complementaria),C01,PENDIENTE DOCENTE,Decision Log §3,Confirmar con el profesor (Matemáticas)
+Mínimo de 200 observaciones,C02,PENDIENTE DOCENTE,Decision Log §3,Confirmar con el profesor (Matemáticas)
+Limpieza inicial durante el scraping,C03,PENDIENTE DOCENTE,Decision Log §3,Confirmar con el profesor (Matemáticas)
+Regresión logística manual: binaria o multinomial,C04,PENDIENTE DOCENTE,Decision Log §3,Confirmar con el profesor (Complejidad)
+"Medición de tiempos con n ≈ 1,749",C05,PENDIENTE DOCENTE,Decision Log §3,Confirmar con el profesor (Complejidad)
+"Rúbricas no disponibles (ML, PyE, Java; BD parcial)",C06,PENDIENTE DOCENTE,Decision Log §3,Revisar el contrato cuando lleguen

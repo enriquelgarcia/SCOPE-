@@ -1,0 +1,3 @@
+match_id,season,h_n_prev_season,a_n_prev_season,is_modeling_eligible,ppg_diff_identical,gf_pg_diff_identical,ga_pg_diff_identical
+EPL_2023-2024_20230930_everton_luton_town,2023-2024,6,5,True,False,False,False
+EPL_2023-2024_20230930_newcastle_united_burnley,2023-2024,6,5,True,False,False,False

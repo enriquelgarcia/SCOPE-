@@ -1,0 +1,1010 @@
+{
+  "project": "SCOPE",
+  "eda_version": "0.1",
+  "phases": {
+    "E1": {
+      "timestamp_utc": "2026-11-01T05:53:40Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "ALL_DESCRIPTIVE"
+      ],
+      "seed": null,
+      "notes": "E1 descriptivo; sin aleatoriedad (seed=null); sin análisis target-aware",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e01_schema_missingness__ALL.csv",
+          "phase": "E1",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "2fa3938b2eaa2322d75a2daed7b69a60e2db9fe948a55de018879c6db9553faa",
+          "rows": 72
+        },
+        {
+          "path": "reports/eda/tables/e01_features_missingness_by_history__ALL.csv",
+          "phase": "E1",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "a53d64dc0ecfe32448fc7648ea1af6b9a7b3434215abae410409ddac1a7d008d",
+          "rows": 210
+        },
+        {
+          "path": "reports/eda/tables/e01_history_eligibility__ALL.csv",
+          "phase": "E1",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "0ab4007309a5ff8393dd4977675105dbd66c07394d5cf284c684f1d1c69dfcf7",
+          "rows": 126
+        },
+        {
+          "path": "reports/eda/tables/e01_quality_summary__ALL.csv",
+          "phase": "E1",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "5f2a99667bc29297ec451a069f3a35ad55701aa4f9a983f6df442c4344368d57",
+          "rows": 127
+        },
+        {
+          "path": "reports/eda/tables/e01_dq_flagged_rows__ALL.csv",
+          "phase": "E1",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "c607dfee52af49c577a1657de9e0594a86cc9862c48a9a6b915bcd76bf165bf0",
+          "rows": 13
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E1",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null
+        }
+      ]
+    },
+    "E2": {
+      "timestamp_utc": "2026-11-01T06:02:16Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "ALL_DESCRIPTIVE",
+        "TRAIN_TARGET"
+      ],
+      "seed": null,
+      "notes": "E2 descriptivo de targets; sin aleatoriedad (seed=null); VAL y TEST solo como filas descriptivas separadas; sin decisiones de modelado",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e02_result_distribution__ALL.csv",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "6a0ebd1dac3eb4408858881807788a7905e5f697d7739689fde7591d61909124",
+          "rows": 18
+        },
+        {
+          "path": "reports/eda/tables/e02_result_distribution__TRAIN.csv",
+          "phase": "E2",
+          "scope": "TRAIN_TARGET",
+          "sha256": "9373e3ff11a1443b016b7928c3f7fd13ca0f47e005dd6a425ae3c0078fb085f0",
+          "rows": 12
+        },
+        {
+          "path": "reports/eda/tables/e02_goal_difference_summary__ALL.csv",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "64f6cb8ca94f0dd8e440c47205ddea47901d3a4d59b6d3ad5909b0d649bbc6b4",
+          "rows": 6
+        },
+        {
+          "path": "reports/eda/tables/e02_goal_difference_summary__TRAIN.csv",
+          "phase": "E2",
+          "scope": "TRAIN_TARGET",
+          "sha256": "e1bc7c46eb459b24fd9bc83929af47a7a2d15cc4d97de10eb106b3351d7d5233",
+          "rows": 4
+        },
+        {
+          "path": "reports/eda/tables/e02_goal_difference_frequency__ALL.csv",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "57b370d8b3182a40121b0d5dc4410b9c8987ce5b92fa0d2b607212879a58054e",
+          "rows": 108
+        },
+        {
+          "path": "reports/eda/tables/e02_goal_difference_frequency__TRAIN.csv",
+          "phase": "E2",
+          "scope": "TRAIN_TARGET",
+          "sha256": "4ae5f0c59dc7d7acce05662c62651151a74473a0bcac47a3fc63ec12d5648cac",
+          "rows": 72
+        },
+        {
+          "path": "reports/eda/tables/e02_goals_summary__ALL.csv",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "a9a12557c92ea97227365a46f9a2cc4c2f7977f7d7f45d3ea07e1d7f49ac90d8",
+          "rows": 18
+        },
+        {
+          "path": "reports/eda/tables/e02_goals_summary__TRAIN.csv",
+          "phase": "E2",
+          "scope": "TRAIN_TARGET",
+          "sha256": "ecba64e23edbf09dd37d02a4554edbb322c8b529afc094dfb53cb70ae3b4cb00",
+          "rows": 12
+        },
+        {
+          "path": "reports/eda/tables/e02_season_summary__ALL.csv",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "718c99da21ec89d628279c0890712e9da8020b0b92d7e344b7cc5d62bef2d6f5",
+          "rows": 6
+        },
+        {
+          "path": "reports/eda/tables/e02_home_advantage__ALL.csv",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "d22907b8f91ad4f8602cf022ea8bf24a8b529f6e7ea319efe8216bcdb34eb989",
+          "rows": 4
+        },
+        {
+          "path": "reports/eda/figures/e02_result_distribution_by_season__ALL.png",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "015151bfc1da00093e4f3e6ccc927e67a1a91df06975ab86671c537f10df2aa9",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e02_goal_difference_distribution__TRAIN.png",
+          "phase": "E2",
+          "scope": "TRAIN_TARGET",
+          "sha256": "6aed9d59f103ae4dcd616f44f5447f6d12a5971b8eb3037a601a6491b92038c5",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E2",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1 + E2)"
+        }
+      ]
+    },
+    "E2m": {
+      "timestamp_utc": "2026-11-01T06:16:35Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "ALL_DESCRIPTIVE"
+      ],
+      "seed": null,
+      "notes": "E2m descriptivo del benchmark de mercado 1X2; cuotas no son predictors; sin target, sin accuracy/log loss/Brier/calibración; sin aleatoriedad (seed=null)",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e02m_market_integrity__ALL.csv",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "1bedcd4e60cc7d893b830e63f0a9e06f611400e0ffbd2e6f36b9a3be955c836c",
+          "rows": 16
+        },
+        {
+          "path": "reports/eda/tables/e02m_overround_summary__ALL.csv",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "c25dd74051cef44067a4ec6e8130340bcacc96489d12ef9abc4dcc4678750002",
+          "rows": 12
+        },
+        {
+          "path": "reports/eda/tables/e02m_implied_probability_summary__ALL.csv",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "1aa07c84cc1f2c9d0bca5450d2a18b1daf7e2d4ac281bf416101ea641f93762f",
+          "rows": 72
+        },
+        {
+          "path": "reports/eda/tables/e02m_market_by_season__ALL.csv",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "561e022680c252bc7724ca861717824a96e13c515fe5d036fc217181d67d98ba",
+          "rows": 6
+        },
+        {
+          "path": "reports/eda/tables/e02m_pre_close_movement__ALL.csv",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "e56587cda8dc90856afc4df8cb1bfa69b65df7da2ffc73622223716d46ef9182",
+          "rows": 24
+        },
+        {
+          "path": "reports/eda/tables/e02m_market_favorite__ALL.csv",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "a4ba0152bc8fb2be2d7acd4a5ec3236da288bf1c5e6e4db18a574375027bca46",
+          "rows": 18
+        },
+        {
+          "path": "reports/eda/figures/e02m_overround_by_season__ALL.png",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "ac4e8b16532fb865473a9778d51ad703ec639d52da73eb40ffabf164b16d76d6",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e02m_implied_probabilities__ALL.png",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "6ee1713bbbbb8aac534d2af325a60796a54f8df1d1e11528fe04d39b9e3e81e6",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E2m",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1 + E2 + E2m)"
+        }
+      ]
+    },
+    "E3": {
+      "timestamp_utc": "2026-11-01T06:27:39Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "DEV_PREDICTORS"
+      ],
+      "seed": null,
+      "notes": "E3 univariado predictor-only sobre DEVX elegible (2021/22–2024/25); sin targets, sin correlaciones, sin transformaciones; sin aleatoriedad (seed=null)",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e03_univariate_summary__DEVX.csv",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "c0a0a7fc1995a261e9f4037d345c446a55f56fbf20f241f4d06a4956261d9183",
+          "rows": 23
+        },
+        {
+          "path": "reports/eda/tables/e03_univariate_by_season__DEVX.csv",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "4f5a23c4e426e6b84e181aaa4907e8c86de1762eb5c20cca98fd5cc036c7ab14",
+          "rows": 92
+        },
+        {
+          "path": "reports/eda/tables/e03_univariate_by_history__DEVX.csv",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "55c0c4a2e5e596a40d453d669c41e4cf1a7035e37243174818dc7041f82dcc0a",
+          "rows": 84
+        },
+        {
+          "path": "reports/eda/tables/e03_extreme_values__DEVX.csv",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "f1aa62eb4ef4b2484389ec700004a3e727b5e3554fd279a0a55cbbc865302fde",
+          "rows": 311
+        },
+        {
+          "path": "reports/eda/tables/e03_granularity__DEVX.csv",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "38aff6c0a918f021d16186dc9da7ad8f5666ead1000e45a3085c6a1454d25ef2",
+          "rows": 21
+        },
+        {
+          "path": "reports/eda/tables/e03_home_away_comparison__DEVX.csv",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "f5c2334d863f67c3c0fd8d187f002a98a88ea42a3e8be1c2605169d2c8a8e68c",
+          "rows": 70
+        },
+        {
+          "path": "reports/eda/figures/e03_diff_feature_distributions__DEVX.png",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "e6ede4f045d1c731ba11f437415c85ecc8e64cb3d9c4316678e6b817f8404e63",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e03_season_vs_last5_univariate__DEVX.png",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "e3ab9d1c089ec96966fcbfdb43a501803e7d497e98b0efce5d91c18f2f2deb94",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e03_feature_dispersion_by_history__DEVX.png",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "bbf7338ba6ef00cc79dd0c52587ca994cc30eecd165f4aac6ba903638f86b6a3",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E3",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1 + E2 + E2m + E3)"
+        }
+      ]
+    },
+    "E4": {
+      "timestamp_utc": "2026-11-01T07:02:01Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "DEV_PREDICTORS",
+        "TRAIN_TARGET"
+      ],
+      "seed": null,
+      "notes": "E4A predictor↔predictor en DEVX elegible (1,399); E4B predictor↔target solo en TRAIN elegible (1,049). Sin VIF/condition number/rango; sin selección; sin tests; sin aleatoriedad (seed=null)",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e04_pearson_predictors__DEVX.csv",
+          "phase": "E4",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "052def25e2729acffbb51d03966c22f7ee07d842ec10d46b22673c2d2e696123",
+          "rows": 21
+        },
+        {
+          "path": "reports/eda/tables/e04_spearman_predictors__DEVX.csv",
+          "phase": "E4",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "98005bf28ff2938bce18996f5567678e16ade24e8a542fb69d01718483a2a756",
+          "rows": 21
+        },
+        {
+          "path": "reports/eda/tables/e04_pairwise_relationships__DEVX.csv",
+          "phase": "E4",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "03e7a7055ce2a79fb789df4b0e629bc61c2282d30cd42116eb8e12f0e86d3fc5",
+          "rows": 54
+        },
+        {
+          "path": "reports/eda/tables/e04_goal_difference_relationships__TRAIN.csv",
+          "phase": "E4",
+          "scope": "TRAIN_TARGET",
+          "sha256": "9b0572b36e8d956ec3f6816aba220c1ba784ea569d07b150f933bf69a7f036b5",
+          "rows": 21
+        },
+        {
+          "path": "reports/eda/tables/e04_features_by_result__TRAIN.csv",
+          "phase": "E4",
+          "scope": "TRAIN_TARGET",
+          "sha256": "d5819f900cce18ff2e3b7f941f7d83b5d7a20dace247a608570c70769be7618c",
+          "rows": 63
+        },
+        {
+          "path": "reports/eda/tables/e04_result_separation__TRAIN.csv",
+          "phase": "E4",
+          "scope": "TRAIN_TARGET",
+          "sha256": "2d183e7869db5dc4643df4b8669a85e244766b842bfd82d8cd6433459684889f",
+          "rows": 63
+        },
+        {
+          "path": "reports/eda/figures/e04_feature_correlation_heatmap__DEVX.png",
+          "phase": "E4",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "22bcc386cc8c88c3e9be69f93944832a8044002f15f87258a619ef5125a33725",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e04_diff_features_by_result__TRAIN.png",
+          "phase": "E4",
+          "scope": "TRAIN_TARGET",
+          "sha256": "1657e240cc8f6ee13caa5c6069c4767c7db6f4b4addc4c670dd5bfb02721ef0b",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E4",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E4)"
+        }
+      ]
+    },
+    "E5": {
+      "timestamp_utc": "2026-11-01T07:11:18Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "DEV_PREDICTORS"
+      ],
+      "seed": null,
+      "notes": "E5 M1 predictor-only sobre DEVX elegible (1,399): identidad diff = h − a, rango (SVD, tol de numpy.linalg.matrix_rank), condition number raw/estandarizado, VIF por R² auxiliar; sin targets, sin desempeño predictivo; sin aleatoriedad (seed=null)",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e05_algebraic_identity__DEVX.csv",
+          "phase": "E5",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "981870235a87b8f47e98cb09264da7e7154645376114e5c9eb69c39f4b65a520",
+          "rows": 7
+        },
+        {
+          "path": "reports/eda/tables/e05_rank_by_triplet__DEVX.csv",
+          "phase": "E5",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "915f585bb76f686d0872f285e59c7bfa947aac90c04f2a6e68986855bca508e7",
+          "rows": 14
+        },
+        {
+          "path": "reports/eda/tables/e05_rank_by_representation__DEVX.csv",
+          "phase": "E5",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "da81b4214e4a836b940beddc9b81766fb60204a8f5b997407c2952e00708875d",
+          "rows": 12
+        },
+        {
+          "path": "reports/eda/tables/e05_vif__DEVX.csv",
+          "phase": "E5",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "9eea9cebc7f3a2a99467cbed6f9a8ef7bcb00825045e3fc45d2bd006fc4e3846",
+          "rows": 42
+        },
+        {
+          "path": "reports/eda/figures/e05_singular_values_by_representation__DEVX.png",
+          "phase": "E5",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "ebfb5e201eaaeb79428b276a900665651b56d9c711f3b4c5b96673e2144bc1ad",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e05_vif_by_representation__DEVX.png",
+          "phase": "E5",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "6a4dab308bba3464d69ad599445abad5f28915a408fefcb2ddc784f34751679e",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E5",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E5)"
+        }
+      ]
+    },
+    "E6": {
+      "timestamp_utc": "2026-11-01T07:24:09Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "DEV_PREDICTORS"
+      ],
+      "seed": null,
+      "notes": "E6 M3 predictor-only (DEVX 2021/22–2024/25): identidad season = last5 con n_prev ≤ 5, divergencia por historial, VIF season+last5; delta = last5 − season; sin targets; sin decidir P02; sin aleatoriedad (seed=null)",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e06_identity_season_last5__DEVX.csv",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "e30b954e681fb8453ee7915ec4b2296fd06ffd74ddc3b88e3da111e360c0141f",
+          "rows": 21
+        },
+        {
+          "path": "reports/eda/tables/e06_diff_mixed_zone_cases__DEVX.csv",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "28695d3e37186dea0186a75ca7bf9378b378704db3b00cb38cd4e2e3408332d3",
+          "rows": 2
+        },
+        {
+          "path": "reports/eda/tables/e06_season_last5_overall__DEVX.csv",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "f7f20d9d38964ca4bd71d13136e38347bb90ee87bba0458b312af60cd2b2ba76",
+          "rows": 54
+        },
+        {
+          "path": "reports/eda/tables/e06_season_last5_by_history__DEVX.csv",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "cbb48535a6a18e63925615249df3a5db35245ac828c931b9f540cbcacc350949",
+          "rows": 72
+        },
+        {
+          "path": "reports/eda/tables/e06_collinearity_season_last5__DEVX.csv",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "dc4b2c6e34c3d694776696c9a89d2cbae0b3710ba730df9addc0351b408a0e3c",
+          "rows": 54
+        },
+        {
+          "path": "reports/eda/figures/e06_season_last5_correlation_by_history__DEVX.png",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "6c731f1986ad88da3ee93e6c1d4ec4f629fa88508700a2ceeba1b2cad369b238",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e06_season_last5_mae_by_history__DEVX.png",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "8b19816bf4b80298752f07705366c1d679c2978a73e9a354e87ba6b818e7e6c0",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E6",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E6)"
+        }
+      ]
+    },
+    "E7": {
+      "timestamp_utc": "2026-11-01T07:38:04Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "DEV_PREDICTORS",
+        "TRAIN_TARGET"
+      ],
+      "seed": 42,
+      "notes": "E7 P01: E7A predictor-only en DEVX (coste por k = 1…6, dispersión por n_prev); E7B retrospectivo solo TRAIN (estimación tras n partidos vs referencia de temporada completa, solo diagnóstico, nunca feature); bootstrap por team-season B=2000 seed=42; sin modelado; VAL/TEST excluidos de E7B",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e07_burnin_retention__DEVX.csv",
+          "phase": "E7",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "5a400d998280948c19c3eecdca18d7216d9199fc376dbbc08b9954e20b44bb27",
+          "rows": 36
+        },
+        {
+          "path": "reports/eda/tables/e07_feature_stability_by_n_prev__DEVX.csv",
+          "phase": "E7",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "198b94dba251a294357ef2410c5206f265d596f50f9a5ecd5f2c712b93a23db8",
+          "rows": 112
+        },
+        {
+          "path": "reports/eda/tables/e07_dispersion_increments__DEVX.csv",
+          "phase": "E7",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "d710286f60363ffde1ac5c24b69288182c5d0aa8743f90eba9e7b72cf5a99c70",
+          "rows": 56
+        },
+        {
+          "path": "reports/eda/tables/e07_early_vs_final_stability__TRAIN.csv",
+          "phase": "E7",
+          "scope": "TRAIN_TARGET",
+          "sha256": "fec8444a33d115c2062572bbd2b372c479b10c7ef2c291477eb7fb68508b3ad6",
+          "rows": 23
+        },
+        {
+          "path": "reports/eda/tables/e07_incremental_tradeoff__TRAIN.csv",
+          "phase": "E7",
+          "scope": "TRAIN_TARGET",
+          "sha256": "918d7aee1708cde435d16f75938eee65356a8b12b23699a66bbfdbac0287faf0",
+          "rows": 16
+        },
+        {
+          "path": "reports/eda/figures/e07_stability_by_n_prev__DEVX.png",
+          "phase": "E7",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "7a0a1feb851626ab836f91d160cb8151bb9a75ee7fc240358196524f83d10b0f",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e07_early_vs_final_mae__TRAIN.png",
+          "phase": "E7",
+          "scope": "TRAIN_TARGET",
+          "sha256": "5fc7382440d53614a86e33f00d3aadc39382eb450ea551125917f920e85a1197",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E7",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E7)"
+        }
+      ]
+    },
+    "E8": {
+      "timestamp_utc": "2026-11-01T07:58:57Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "DEV_PREDICTORS",
+        "TRAIN_TARGET"
+      ],
+      "seed": 42,
+      "notes": "E8 P02: E8A responsividad predictor-only en DEVX (team-match, n_prev ≥ 6); E8B diagnóstico target-aware solo TRAIN (features pre-partido vs resultado del propio partido como outcome); bootstrap por team-season B=2000 seed=42; sin modelado; sin ventanas alternativas",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e08_responsiveness__DEVX.csv",
+          "phase": "E8",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "2244668e476d8d4dded5d2c1bb331d06311d5026f8ae1e9130d6144addd1a80c",
+          "rows": 24
+        },
+        {
+          "path": "reports/eda/tables/e08_next_match_association__TRAIN.csv",
+          "phase": "E8",
+          "scope": "TRAIN_TARGET",
+          "sha256": "d0f058df4b01a17d3916ce268137be9894e5065e9a7734e1f24cc937e4705509",
+          "rows": 21
+        },
+        {
+          "path": "reports/eda/tables/e08_association_bootstrap__TRAIN.csv",
+          "phase": "E8",
+          "scope": "TRAIN_TARGET",
+          "sha256": "a612c46e4069c5053cc07b618cd1af27e8dabb9daf728fca2ac5848fd71d7b2f",
+          "rows": 6
+        },
+        {
+          "path": "reports/eda/tables/e08_delta_persistence__TRAIN.csv",
+          "phase": "E8",
+          "scope": "TRAIN_TARGET",
+          "sha256": "9d4aa01cc92af32fefc2c187a6dab6c32a0e289be693dac130b43b1b916228cf",
+          "rows": 3
+        },
+        {
+          "path": "reports/eda/tables/e08_delta_groups__TRAIN.csv",
+          "phase": "E8",
+          "scope": "TRAIN_TARGET",
+          "sha256": "8e3be4dad8c1c062592e03d25f9e5aaf7f90c85987c3dee01714ecd5ba87a40e",
+          "rows": 18
+        },
+        {
+          "path": "reports/eda/tables/e08_window_evidence_summary__TRAIN.csv",
+          "phase": "E8",
+          "scope": "TRAIN_TARGET",
+          "sha256": "f2e6a27abe0af2ba2628801bfb6f359ee656a518de602b4b57aa398119896bbc",
+          "rows": 3
+        },
+        {
+          "path": "reports/eda/figures/e08_responsiveness_season_vs_last5__DEVX.png",
+          "phase": "E8",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "f4b1839f473066f3be36271d3fdff6f0b22296418797212e19630ebbe0436d5e",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e08_next_match_association__TRAIN.png",
+          "phase": "E8",
+          "scope": "TRAIN_TARGET",
+          "sha256": "bb877efe9637b2a66009aa3e228bef008bc5cb6000cd09bb50a915e74a5c8d8d",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e08_delta_persistence__TRAIN.png",
+          "phase": "E8",
+          "scope": "TRAIN_TARGET",
+          "sha256": "dde69b43e17369147095cd1877e9066b07eacaa144011cc12c9c4896c5f7c500",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E8",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E8)"
+        }
+      ]
+    },
+    "E9": {
+      "timestamp_utc": "2026-11-01T08:16:08Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "ALL_DESCRIPTIVE"
+      ],
+      "seed": null,
+      "notes": "E9 Q01 (AST > AS): localización y trazabilidad RAW→INTERIM→CANONICAL→team_match_log; propagación a sot_pg_last5 (h_/a_/diff_); sensibilidad en memoria con dos escenarios de un solo campo (A: AS correcto, AST 9→8; B: AST correcto, AS 8→9; campo erróneo desconocido); sin targets, sin modelado, sin escribir datos; sin aleatoriedad",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e09_q01_traceability__ALL.csv",
+          "phase": "E9",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "325b7a1762d98ac8fd6860d670a523e138c69073d9eb5dd471e85a40a8380fa2",
+          "rows": 5
+        },
+        {
+          "path": "reports/eda/tables/e09_q01_feature_propagation__ALL.csv",
+          "phase": "E9",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "7460bae07d08f79f8c41e14b18539b82928ff00a98f2f46abd897d38eedaa470",
+          "rows": 7
+        },
+        {
+          "path": "reports/eda/tables/e09_q01_minimal_repair_sensitivity__ALL.csv",
+          "phase": "E9",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "0e75e6c331b577e45de3825a104fdefd194075ab22aaafcd6afb6feb4472ef19",
+          "rows": 10
+        },
+        {
+          "path": "reports/eda/tables/e09_q01_impact_summary__ALL.csv",
+          "phase": "E9",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "17c3f4b31738231f827962ad9ff637eaaf96787de6879e117a01e2290d3dbe71",
+          "rows": 13
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E9",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E9)"
+        }
+      ]
+    },
+    "E10": {
+      "timestamp_utc": "2026-11-01T17:08:03Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "ALL_DESCRIPTIVE",
+        "DEV_PREDICTORS",
+        "VAL_DESCRIPTIVE",
+        "TEST_DESCRIPTIVE"
+      ],
+      "seed": null,
+      "notes": "E10 drift temporal predictor-only (filas elegibles D48): resumen por temporada, SMD (s pooled) y KS propio entre temporadas consecutivas, TRAIN→VAL (DEVX) y TRAIN→TEST (DESCRIPTIVE_ONLY); familias; composición de equipos y sensibilidad con equipos comunes; cobertura de columnas fuente. Sin targets, sin umbrales, sin modelado; TEST no genera decisiones",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e10_feature_summary_by_season__ALL.csv",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "f537988fb67537c52048cd3a7d4da502424d2e2ee8ff4e5d38246092081f983a",
+          "rows": 115
+        },
+        {
+          "path": "reports/eda/tables/e10_pairwise_drift__ALL.csv",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "76dea17556f511f260572e30fc9976b89178c63ee24addb413ead67092e05ddf",
+          "rows": 138
+        },
+        {
+          "path": "reports/eda/tables/e10_train_val_drift__DEVX.csv",
+          "phase": "E10",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "a9fa474e9d762cb407fee019a80a384c1f041515f9b1f829a8b3e199fe012e2a",
+          "rows": 23
+        },
+        {
+          "path": "reports/eda/tables/e10_train_test_drift__TEST.csv",
+          "phase": "E10",
+          "scope": "TEST_DESCRIPTIVE",
+          "sha256": "8d2214f28a883043e46c60d194b7d36eeec1346ccc903ae1ed160ec67ac9209f",
+          "rows": 23
+        },
+        {
+          "path": "reports/eda/tables/e10_family_drift_summary__ALL.csv",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "d969d78290c5f5119bebb7781bd13325a271de47dd74a87b62f6c653b86cf8c7",
+          "rows": 54
+        },
+        {
+          "path": "reports/eda/tables/e10_team_composition_by_season__ALL.csv",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "3d1a8e088e51abc06c25db40a72031e7b380d83377655dc537873e7d083531f9",
+          "rows": 5
+        },
+        {
+          "path": "reports/eda/tables/e10_common_teams_sensitivity__ALL.csv",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "619623b397ecfa30390617dc7fcc5726a2fcc5108a1f2c213539fff811b8c3ad",
+          "rows": 16
+        },
+        {
+          "path": "reports/eda/tables/e10_source_coverage__ALL.csv",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "2fb5a147044fcbcc259ec18142d57b1a84d75152be8f58288bb78d10277d175a",
+          "rows": 5
+        },
+        {
+          "path": "reports/eda/figures/e10_feature_means_by_season__ALL.png",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "98429f4c64350ead69a185f46ae847d106078edb4edca6b1cb4f9b12dc25440b",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e10_train_val_drift__DEVX.png",
+          "phase": "E10",
+          "scope": "DEV_PREDICTORS",
+          "sha256": "1966bf10caedd447d8480dba6ff11b2e72b8aa33b66702e4b621587875bcc8cf",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/figures/e10_train_test_drift__TEST.png",
+          "phase": "E10",
+          "scope": "TEST_DESCRIPTIVE",
+          "sha256": "2b6c6057dab350c21a92ac1399f3c00933a037be758fbd490f5002e3e78a824b",
+          "rows": null
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E10",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E10)"
+        }
+      ]
+    },
+    "E11": {
+      "timestamp_utc": "2026-11-01T17:24:32Z",
+      "python": "3.10.12",
+      "pandas": "2.3.3",
+      "numpy": "2.2.6",
+      "input_sha256": {
+        "INTERIM": "cec123ceede88e1e1a37c1bdfd2651962f244c67f1e0e5e8adb561b1c7d543ad",
+        "CANONICAL": "06bcacae7dbd8951d864ca0d3ea46adccceae77827e0ccc1e50a4d19fce84ee1",
+        "TEAM_MATCH_LOG": "0032af2965604d556b337a5d8c1f4ce6b5ac95ca931d82b99651a4f00c03ab02",
+        "FEATURES": "a18c47888a38a80585ae97930f81a4ad6fc4497315af63ef05f284352ca9b356"
+      },
+      "scopes": [
+        "ALL_DESCRIPTIVE"
+      ],
+      "seed": null,
+      "notes": "E11 síntesis final: verificación estructural (D44, RAW, manifiesto E1–E10, Decision Log D46–D49 y provisionales) y tablas de síntesis (fases, decisiones, handoff). Sin análisis nuevos, sin targets, sin modelado; TEST sin decisiones",
+      "outputs": [
+        {
+          "path": "reports/eda/tables/e11_eda_phase_summary__ALL.csv",
+          "phase": "E11",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b341df51d374b03af329035dbfa6e3eb29e97dc09ac3564d1c00b96e800f50cd",
+          "rows": 12
+        },
+        {
+          "path": "reports/eda/tables/e11_decision_status__ALL.csv",
+          "phase": "E11",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "d60164703d105f964ec879a09eb3e13b4d8c14a8cbf0f487804e0899bee2082b",
+          "rows": 15
+        },
+        {
+          "path": "reports/eda/tables/e11_modeling_handoff__ALL.csv",
+          "phase": "E11",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "11fbeb91f36bd3df1fb6f6f0591f6c5c17a451ed4992070d56b9a1504e6b5acf",
+          "rows": 18
+        },
+        {
+          "path": "reports/eda/eda_report_v0.1.md",
+          "phase": "E11",
+          "scope": "ALL_DESCRIPTIVE",
+          "sha256": "b48e5b1eef4781928c2d6c7b16be66b187a1c63e1104136df094104dd166d7af",
+          "rows": null,
+          "note": "reporte acumulativo (E1–E11)"
+        }
+      ]
+    }
+  },
+  "scope_definitions": {
+    "ALL_DESCRIPTIVE": {
+      "seasons": [
+        "2021-2022",
+        "2022-2023",
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ],
+      "suffix": "__ALL",
+      "allows_target": true,
+      "decision_use": "solo descripción/documentación; nunca justifica decisiones"
+    },
+    "DEV_PREDICTORS": {
+      "seasons": [
+        "2021-2022",
+        "2022-2023",
+        "2023-2024",
+        "2024-2025"
+      ],
+      "suffix": "__DEVX",
+      "allows_target": false,
+      "decision_use": "decisiones basadas solo en predictors (sin target)"
+    },
+    "TRAIN_TARGET": {
+      "seasons": [
+        "2021-2022",
+        "2022-2023",
+        "2023-2024"
+      ],
+      "suffix": "__TRAIN",
+      "allows_target": true,
+      "decision_use": "decisiones target-aware"
+    },
+    "VAL_DESCRIPTIVE": {
+      "seasons": [
+        "2024-2025"
+      ],
+      "suffix": "__VAL",
+      "allows_target": true,
+      "decision_use": "solo descripción; su target no se usa para decisiones"
+    },
+    "TEST_DESCRIPTIVE": {
+      "seasons": [
+        "2025-2026"
+      ],
+      "suffix": "__TEST",
+      "allows_target": true,
+      "decision_use": "solo descripción (D42)"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+season,data_split,rows,interim_columns_nonempty,empty_Date,empty_Time,empty_HomeTeam,empty_AwayTeam,empty_FTHG,empty_FTAG,empty_FTR,empty_HST,empty_AST
+2021-2022,TRAIN,380,110,0,0,0,0,0,0,0,0,0
+2022-2023,TRAIN,380,110,0,0,0,0,0,0,0,0,0
+2023-2024,TRAIN,380,110,0,0,0,0,0,0,0,0,0
+2024-2025,VALIDATION,380,124,0,0,0,0,0,0,0,0,0
+2025-2026,FINAL_TEST,380,136,0,0,0,0,0,0,0,0,0

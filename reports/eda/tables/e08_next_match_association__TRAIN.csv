@@ -1,0 +1,22 @@
+metric,window,outcome,side,population,n,pearson,spearman,role
+ppg,season,points,all,TRAIN_team_match n_prev ≥ 6,1920,0.266510922969965,0.2609091334165271,principal
+ppg,last5,points,all,TRAIN_team_match n_prev ≥ 6,1920,0.19809773154224203,0.1944879195452692,principal
+ppg,season,points,h,TRAIN_team_match n_prev ≥ 6,961,0.2796991726785155,0.2802052103846562,principal
+ppg,last5,points,h,TRAIN_team_match n_prev ≥ 6,961,0.23497101601448198,0.23436633454888536,principal
+ppg,season,points,a,TRAIN_team_match n_prev ≥ 6,959,0.26525422504650253,0.25135057036552017,principal
+ppg,last5,points,a,TRAIN_team_match n_prev ≥ 6,959,0.176054348248235,0.17138832287395273,principal
+gf_pg,season,goals_for,all,TRAIN_team_match n_prev ≥ 6,1920,0.27534416141613066,0.2561547363484638,principal
+gf_pg,last5,goals_for,all,TRAIN_team_match n_prev ≥ 6,1920,0.21139035736243456,0.18172352448295317,principal
+gf_pg,season,goals_for,h,TRAIN_team_match n_prev ≥ 6,961,0.3115108680884364,0.28358662315194255,principal
+gf_pg,last5,goals_for,h,TRAIN_team_match n_prev ≥ 6,961,0.24902402473909052,0.22142644502904915,principal
+gf_pg,season,goals_for,a,TRAIN_team_match n_prev ≥ 6,959,0.2425495363007717,0.2363679482179995,principal
+gf_pg,last5,goals_for,a,TRAIN_team_match n_prev ≥ 6,959,0.1782957309002999,0.15258519009227717,principal
+ga_pg,season,goals_against,all,TRAIN_team_match n_prev ≥ 6,1920,0.19272103196584434,0.1828958644907352,principal
+ga_pg,last5,goals_against,all,TRAIN_team_match n_prev ≥ 6,1920,0.14940878842269364,0.15163620376751744,principal
+ga_pg,season,goals_against,h,TRAIN_team_match n_prev ≥ 6,961,0.17318875690592953,0.15761318168860042,principal
+ga_pg,last5,goals_against,h,TRAIN_team_match n_prev ≥ 6,961,0.14160006994423582,0.13403762628667218,principal
+ga_pg,season,goals_against,a,TRAIN_team_match n_prev ≥ 6,959,0.21652944938077073,0.21388662028582128,principal
+ga_pg,last5,goals_against,a,TRAIN_team_match n_prev ≥ 6,959,0.16457193527466182,0.1760474658866607,principal
+sot_pg,last5,shots_on_target_for,all,TRAIN_team_match n_prev ≥ 6,1920,0.24144301991380063,0.209948664199921,auxiliar (sin versión season)
+sot_pg,last5,shots_on_target_for,h,TRAIN_team_match n_prev ≥ 6,961,0.29158558274244073,0.2361504047714735,auxiliar (sin versión season)
+sot_pg,last5,shots_on_target_for,a,TRAIN_team_match n_prev ≥ 6,959,0.2092034475853981,0.20175800287565154,auxiliar (sin versión season)

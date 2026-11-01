@@ -1,0 +1,8 @@
+role,team_position_in_season,team_matches_in_season,match_id,season,data_split,date,home_team,away_team,affected_team_id,affected_side,affected_feature,n_prev,window_positions,q01_in_window,sot_last5_observed,opponent_sot_last5,diff_sot_pg_last5_observed,diff_affected,is_modeling_eligible
+partido Q01 (fuente),1,38,EPL_2021-2022_20210815_newcastle_united_west_ham_united,2021-2022,TRAIN,2021-08-15,Newcastle United,West Ham United,west_ham_united,a,a_sot_pg_last5,0,(vacía),False,,,,False,False
+afectado 1/5,2,38,EPL_2021-2022_20210823_west_ham_united_leicester_city,2021-2022,TRAIN,2021-08-23,West Ham United,Leicester City,west_ham_united,h,h_sot_pg_last5,1,1–1,True,9.0,5.0,4.0,True,False
+afectado 2/5,3,38,EPL_2021-2022_20210828_west_ham_united_crystal_palace,2021-2022,TRAIN,2021-08-28,West Ham United,Crystal Palace,west_ham_united,h,h_sot_pg_last5,2,1–2,True,8.0,1.5,6.5,True,False
+afectado 3/5,4,38,EPL_2021-2022_20210911_southampton_west_ham_united,2021-2022,TRAIN,2021-09-11,Southampton,West Ham United,west_ham_united,a,a_sot_pg_last5,3,1–3,True,6.666666666666667,4.0,-2.666666666666667,True,True
+afectado 4/5,5,38,EPL_2021-2022_20210919_west_ham_united_manchester_united,2021-2022,TRAIN,2021-09-19,West Ham United,Manchester United,west_ham_united,h,h_sot_pg_last5,4,1–4,True,5.75,5.5,0.25,True,True
+afectado 5/5,6,38,EPL_2021-2022_20210925_leeds_united_west_ham_united,2021-2022,TRAIN,2021-09-25,Leeds United,West Ham United,west_ham_united,a,a_sot_pg_last5,5,1–5,True,5.4,4.4,-1.0,True,True
+primer partido no afectado,7,38,EPL_2021-2022_20211003_west_ham_united_brentford,2021-2022,TRAIN,2021-10-03,West Ham United,Brentford,west_ham_united,h,h_sot_pg_last5,6,2–6,False,5.0,2.6,2.4,False,True

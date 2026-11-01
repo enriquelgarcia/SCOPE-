@@ -1,0 +1,17 @@
+check,column,window,outcome,n_rows,null_count,min,max,n_le_1,status,max_abs_deviation,rows_outside_tolerance,season
+odds_column,mkt_avg_pre_home,pre,H,1900,0,1.07,18.09,0,PASS,,,
+odds_column,mkt_avg_pre_draw,pre,D,1900,0,3.05,12.85,0,PASS,,,
+odds_column,mkt_avg_pre_away,pre,A,1900,0,1.14,37.57,0,PASS,,,
+odds_column,mkt_avg_close_home,close,H,1900,0,1.07,20.93,0,PASS,,,
+odds_column,mkt_avg_close_draw,close,D,1900,0,2.98,14.54,0,PASS,,,
+odds_column,mkt_avg_close_away,close,A,1900,0,1.13,32.0,0,PASS,,,
+sum_p_equals_1_tol_1e-9,p_pre_H+p_pre_D+p_pre_A,pre,ALL,1900,0,0.9999999999999998,1.0000000000000002,,PASS,2.220446049250313e-16,0.0,
+sum_q_gt_1,sum_q_pre,pre,ALL,1900,0,1.0344204193754016,1.0725274725274725,0,INFO,,,
+sum_p_equals_1_tol_1e-9,p_close_H+p_close_D+p_close_A,close,ALL,1900,0,0.9999999999999998,1.0000000000000002,,PASS,2.220446049250313e-16,0.0,
+sum_q_gt_1,sum_q_close,close,ALL,1900,0,1.0268876060443284,1.0691913610390056,0,INFO,,,
+rows_with_complete_6_odds,mkt_avg_*,both,ALL,1900,0,,,,PASS,,,
+rows_per_season,match_id,both,ALL,380,0,,,,PASS,,,2021-2022
+rows_per_season,match_id,both,ALL,380,0,,,,PASS,,,2022-2023
+rows_per_season,match_id,both,ALL,380,0,,,,PASS,,,2023-2024
+rows_per_season,match_id,both,ALL,380,0,,,,PASS,,,2024-2025
+rows_per_season,match_id,both,ALL,380,0,,,,PASS,,,2025-2026

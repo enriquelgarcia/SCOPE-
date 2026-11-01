@@ -1,0 +1,19 @@
+requirement,source_decision,rationale,scope,status
+"TRAIN = 2021/22–2023/24, VALIDATION = 2024/25, FINAL TEST = 2025/26","P06 (abierta, provisional); D35, D42",Protocolo operativo temporal vigente; no es una decisión formal cerrada,TRAIN/VAL/TEST,"PROTOCOLO OPERATIVO VIGENTE (PROVISIONAL, P06 ABIERTA)"
+"TEST nunca se usa para selección, umbrales, escalado, calibración ni tratamiento de anomalías","D35, D42",2025/26 no es completamente ciego (descriptivos agregados ya vistos); solo evaluación final,TEST,OBLIGATORIO
+"Burn-in k = 3: is_modeling_eligible = min(h_n_prev, a_n_prev) ≥ 3",D48,Parsimonia y rendimientos decrecientes (E7),TRAIN/VAL/TEST,OBLIGATORIO
+Sensibilidad opcional con k = 4 / k = 5,D48 (nota),Comprobar si el desempeño cambia materialmente; no reabre D48,TRAIN/VAL,OPCIONAL
+No usar HADIFF completo (h + a + diff) en modelos lineales no regularizados,"D46, D19",Dependencia lineal exacta: rango 14/21,TRAIN/VAL,OBLIGATORIO
+"Tratar HA y DIFF como representaciones distintas, no equivalentes","D46, D22",DIFF pierde niveles absolutos; comparación por desempeño pendiente,TRAIN/VAL,OBLIGATORIO
+Evaluar el valor incremental de last5: season frente a season + last5 (last5 sola solo como diagnóstico),P02,E8 no confirma ni descarta last5,TRAIN/VAL,PENDIENTE
+Resolver P04 (subconjuntos d = 5 / d = 10),"P04, D22, D23",Depende de representación y de P02,TRAIN/VAL,PENDIENTE
+Cada modelo declara su feature subset explícito,D19,Reglas M1–M4 del contrato,TRAIN/VAL,OBLIGATORIO
+"Escalado, si se usa, ajustado solo con train",Contrato T8,Escalas distintas (SOT ≈ 4.5 frente a PPG ≈ 1.4); KNN sensible,TRAIN,OBLIGATORIO
+Baseline obligatoria en la comparación,Instrucciones del proyecto,Referencia mínima frente a la que medir cualquier modelo,TRAIN/VAL,DECISIÓN DEL EQUIPO
+"Al menos 4 modelos (iniciales considerados: baseline, regresión logística multinomial, KNN, árbol de decisión, Random Forest)",Requisito docente comunicado; respaldo documental/rúbrica pendiente (C06),Algoritmos más complejos solo con justificación metodológica,TRAIN/VAL,"REQUISITO DOCENTE COMUNICADO (RESPALDO DOCUMENTAL PENDIENTE, C06)"
+"KNN y regresión logística de Complejidad implementados a mano por el estudiante, sin IA",D23 [R],Requisito de rúbrica,—,OBLIGATORIO (RÚBRICA)
+"Métricas multiclase: matriz de confusión, precision/recall/F1 por clase, además de accuracy",Instrucciones del proyecto; E2 (D minoritaria),Un clasificador que nunca predice D puede parecer aceptable en accuracy,VAL/TEST,DECISIÓN DEL EQUIPO
+"Métricas probabilísticas: log loss, Brier multiclase y calibración",Contrato §10 y §12 (convención exacta a definir en ML),"El objetivo son probabilidades P(H), P(D), P(A)",VAL/TEST,OBLIGATORIO
+"Mercado solo como benchmark externo (pre principal, close secundario), sobre los mismos partidos elegibles","D12, D13, D39",MARKET no es predictor en v0.1,VAL/TEST,OBLIGATORIO
+Q01 no se corrige en v0.1; exclusión solo como sensibilidad opcional,D49,Campo erróneo desconocido,TRAIN,OBLIGATORIO
+Interpretar el desempeño en TEST teniendo en cuenta su diferencia de distribución (E10),D42; E10,TEST más bajo y menos disperso en GF/GA/SOT; no modifica el protocolo,TEST,DESCRIPTIVO

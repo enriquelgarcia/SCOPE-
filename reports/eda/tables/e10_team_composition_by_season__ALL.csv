@@ -1,0 +1,6 @@
+season,data_split,n_teams,n_matches,n_eligible,shared_with_previous,entering,leaving,entering_teams,leaving_teams
+2021-2022,TRAIN,20,380,350,,,,,
+2022-2023,TRAIN,20,380,350,17.0,3.0,3.0,afc_bournemouth|fulham|nottingham_forest,burnley|norwich_city|watford
+2023-2024,TRAIN,20,380,349,17.0,3.0,3.0,burnley|luton_town|sheffield_united,leeds_united|leicester_city|southampton
+2024-2025,VALIDATION,20,380,350,17.0,3.0,3.0,ipswich_town|leicester_city|southampton,burnley|luton_town|sheffield_united
+2025-2026,FINAL_TEST,20,380,350,17.0,3.0,3.0,burnley|leeds_united|sunderland,ipswich_town|leicester_city|southampton

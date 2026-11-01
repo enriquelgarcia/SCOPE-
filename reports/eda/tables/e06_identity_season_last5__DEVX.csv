@@ -1,0 +1,22 @@
+population,side,metric,season_feature,last5_feature,condition,rows_evaluated,rows_identical,pct_identical,max_abs_error,tolerance
+A_DEVX_history,h,ppg,h_ppg_season,h_ppg_last5,n_prev 1–5 (identidad por construcción),199,199,100.0,0.0,1e-12
+A_DEVX_history,h,ppg,h_ppg_season,h_ppg_last5,n_prev ≥ 6 (control),1281,17,1.3270882123341141,1.8484848484848484,1e-12
+A_DEVX_history,a,ppg,a_ppg_season,a_ppg_last5,n_prev 1–5 (identidad por construcción),201,201,100.0,0.0,1e-12
+A_DEVX_history,a,ppg,a_ppg_season,a_ppg_last5,n_prev ≥ 6 (control),1279,25,1.9546520719311962,1.7941176470588236,1e-12
+A_DEVX_history,diff,ppg,diff_ppg_season,diff_ppg_last5,"ambos lados 1–5: max(h_n, a_n) ≤ 5 (identidad por construcción)",199,199,100.0,0.0,1e-12
+A_DEVX_history,diff,ppg,diff_ppg_season,diff_ppg_last5,un solo lado ≤ 5 (zona mixta; identidad no garantizada),2,0,0.0,0.30000000000000004,1e-12
+A_DEVX_history,diff,ppg,diff_ppg_season,diff_ppg_last5,"ambos lados ≥ 6: min(h_n, a_n) ≥ 6",1279,7,0.547302580140735,2.374193548387097,1e-12
+A_DEVX_history,h,gf_pg,h_gf_pg_season,h_gf_pg_last5,n_prev 1–5 (identidad por construcción),199,199,100.0,0.0,1e-12
+A_DEVX_history,h,gf_pg,h_gf_pg_season,h_gf_pg_last5,n_prev ≥ 6 (control),1281,32,2.498048399687744,2.281481481481481,1e-12
+A_DEVX_history,a,gf_pg,a_gf_pg_season,a_gf_pg_last5,n_prev 1–5 (identidad por construcción),201,201,100.0,0.0,1e-12
+A_DEVX_history,a,gf_pg,a_gf_pg_season,a_gf_pg_last5,n_prev ≥ 6 (control),1279,34,2.6583268178264268,2.0999999999999996,1e-12
+A_DEVX_history,diff,gf_pg,diff_gf_pg_season,diff_gf_pg_last5,"ambos lados 1–5: max(h_n, a_n) ≤ 5 (identidad por construcción)",199,199,100.0,0.0,1e-12
+A_DEVX_history,diff,gf_pg,diff_gf_pg_season,diff_gf_pg_last5,un solo lado ≤ 5 (zona mixta; identidad no garantizada),2,0,0.0,0.46666666666666656,1e-12
+A_DEVX_history,diff,gf_pg,diff_gf_pg_season,diff_gf_pg_last5,"ambos lados ≥ 6: min(h_n, a_n) ≥ 6",1279,19,1.4855355746677092,2.95,1e-12
+A_DEVX_history,h,ga_pg,h_ga_pg_season,h_ga_pg_last5,n_prev 1–5 (identidad por construcción),199,199,100.0,0.0,1e-12
+A_DEVX_history,h,ga_pg,h_ga_pg_season,h_ga_pg_last5,n_prev ≥ 6 (control),1281,29,2.2638563622170182,1.6625,1e-12
+A_DEVX_history,a,ga_pg,a_ga_pg_season,a_ga_pg_last5,n_prev 1–5 (identidad por construcción),201,201,100.0,0.0,1e-12
+A_DEVX_history,a,ga_pg,a_ga_pg_season,a_ga_pg_last5,n_prev ≥ 6 (control),1279,28,2.18921032056294,1.6923076923076925,1e-12
+A_DEVX_history,diff,ga_pg,diff_ga_pg_season,diff_ga_pg_last5,"ambos lados 1–5: max(h_n, a_n) ≤ 5 (identidad por construcción)",199,199,100.0,0.0,1e-12
+A_DEVX_history,diff,ga_pg,diff_ga_pg_season,diff_ga_pg_last5,un solo lado ≤ 5 (zona mixta; identidad no garantizada),2,0,0.0,0.13333333333333336,1e-12
+A_DEVX_history,diff,ga_pg,diff_ga_pg_season,diff_ga_pg_last5,"ambos lados ≥ 6: min(h_n, a_n) ≥ 6",1279,17,1.3291634089132134,2.083974358974359,1e-12
